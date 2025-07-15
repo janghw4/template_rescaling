@@ -22,9 +22,9 @@ SPM integration: Seamless integration with SPM12 for neuroimaging workflows
 ```matlab
 % Define subject measurements (in cm)
 measurements = struct();
-measurements.lpa_to_rpa = 14.5;    % Left-right preauricular distance
+measurements.width = 14.5;         % Left-right width
 measurements.depth = 19.2;         % Anterior-posterior depth
-measurements.lpa_to_top = 13.8;    % LPA to top of head
+measurements.height = 13.8;        % Ear to top of head
 
 % Create rescaled template
 scaling_factors = create_rescaled_mni_template('sub001', measurements);
@@ -43,14 +43,14 @@ scaling_factors = create_rescaled_mni_template('sub001', measurements, ...
 
 ## Measurements Guide
 
-- **lpa_to_rpa**: Distance between left and right preauricular points (supratragic notch) (cm)
+- **width**: Distance between left and right preauricular points (supratragic notch) (cm)
 - **depth**: Anterior-posterior head depth (cm)
-- **lpa_to_top**: Distance from left preauricular point (supratragic notch) to top of head (cm)
+- **height**: Distance from left or right preauricular point (supratragic notch) to top of head (cm)
 
 ## Output
 
 The function creates:
-- Rescaled MNI template file in subject-specific directory
+- Rescaled MNI template file in the subject-specific directory
 - Scaling factors for each dimension [fx, fy, fz]
 
 ## Citation
