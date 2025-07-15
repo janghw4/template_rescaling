@@ -2,6 +2,11 @@
 A MATLAB function for creating subject-specific rescaled MNI templates based on individual head measurements. 
 This tool helps improve the anatomical accuracy of neuroimaging analyses by accounting for individual head shape variations.
 
+## Author
+
+Hyunwoo Jang, Center for Consciousness Science, University of Michigan
+(Advisor: [Prof. Zirui Huang](https://sites.lsa.umich.edu/huanglab/))
+
 ## Features
 
 Subject-specific scaling: Generate personalized MNI templates based on head measurements
